@@ -131,7 +131,7 @@ end
 
 _G.kernel = {}
 
-kernel._VERSION = "mineCORE 3.0"
+kernel._VERSION = "mineCORE 3.1"
 
 pcall(bootfs.rename("/boot/log", "/boot/log.old"))
 

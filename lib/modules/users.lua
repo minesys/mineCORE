@@ -35,7 +35,7 @@ function users.login(name)
   local tries = 3
   local salt = passwd[name].salt
   while tries > 0 do
-    io.write("Password: ")
+    io.write("Enter your password: ")
     local password = read(" ")
     local password = encrypt(password, salt or "")
     if passwd[name].pass == password then
@@ -83,7 +83,7 @@ function users.adduser(name)
   kernel.log("Users: adding user " .. name)
   local password = ""
   repeat
-    io.write("Password: ")
+    io.write("Enter your password: ")
     password = read(" ")
   until password ~= ""
   local salt = ""

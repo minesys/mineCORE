@@ -16,6 +16,7 @@ if human then
   used = tostring(math.floor(used / 1024)) .. "K"
 end
 
+print("Memory usage status")
 print("Total:", total)
 print("Used:", used)
 print("Free:", free)

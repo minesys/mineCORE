@@ -1,4 +1,4 @@
--- Mine Shell 3.0 --
+-- mineBASH 3.0 --
 
 local users = require("users")
 
@@ -12,7 +12,7 @@ local env = {
   USER = users.user(),
   UID = users.uid(),
   PS1 = "\\w\\$ ",
-  PATH = "/bin:/sbin:/usr/bin"
+  PATH = "/bin:/sbin:/usr/bin:/usr/pkg"
 }
 
 function os.getenv(var)

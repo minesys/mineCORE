@@ -27,7 +27,7 @@ if #args > 0 then
     else
       local u = ""
       repeat
-        io.write("username: ")
+        io.write("Enter your username: ")
         u = read()
       until u ~= ""
       users.adduser(u)
@@ -54,7 +54,7 @@ if #args > 0 then
   return
 end
 
-print("User Manager, version 1.0.")
+print("User Manager, version 1.1.")
 print("Kolibra Studios 2022. All rights reserved.")
 print(" ")
 print("Type 'help' for help.")
@@ -67,6 +67,7 @@ while true do
     input = string.tokenize(" ", input)
     if input[1] == "exit" then
       print("Exiting User Manager.")
+      print("Goodbye!")
       os.exit()
     elseif input[1] == "help" then
       print(usage)
@@ -74,7 +75,7 @@ while true do
       local name = input[2] or ""
       if name == "" or not name then
         repeat
-          io.write("Username: ")
+          io.write("Enter your username: ")
           name = read()
         until name ~= ""
       end
@@ -90,7 +91,7 @@ while true do
       local name = input[2] or ""
       if name == "" or not name then
         repeat
-          io.write("Username: ")
+          io.write("Enter your username: ")
           name = read()
         until name ~= ""
       end

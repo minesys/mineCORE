@@ -1,0 +1,1 @@
+print("/usr/pkg: This is mineCORE standart directory for mineCORE Packages")

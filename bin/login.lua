@@ -7,12 +7,12 @@ local cls = true
 
 for _,t in pairs(os.tasks()) do
   if os.info(t).name == "/bin/sh.lua" then
-    return print("Login: this user is already in the session!")
+    return print("usrmgr: this user is already in the session!")
   end
 end
 
 while true do
-  io.write("Login: ")
+  io.write("Enter username: ")
   local name = read()
   local ok, err = users.login(name)
   if not ok then
