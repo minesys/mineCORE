@@ -131,7 +131,7 @@ end
 
 _G.kernel = {}
 
-kernel._VERSION = "mineCORE 3.1"
+kernel._VERSION = "mineCORE 3.2"
 
 pcall(bootfs.rename("/boot/log", "/boot/log.old"))
 
@@ -158,7 +158,7 @@ kernel.log("[INIT] >> Free memory: " .. tostring(math.floor(computer.freeMemory(
 
 local native_shutdown = computer.shutdown
 computer.shutdown = function(b) -- make sure the log file gets properly closed
-  kernel.log("[BOOT_FAULURE] >> Shutting down")
+  kernel.log("[BOOT_FAULURE] >> System crashed! Shutting down.")
   bootfs.close(kernelLog)
   native_shutdown(b)
 end
