@@ -4,7 +4,7 @@ local args, options = shell.parse(...)
 
 local netutils = require("netutils")
 
-local usage = [[wget (c) 2020 Ocawesome101 under the MIT License.
+local usage = [[WGET for mineCORE (c) 2024 mineSYS under the MIT License.
 usage: wget URL FILE
 
 wget will attempt to guess a destination file if none is specified.

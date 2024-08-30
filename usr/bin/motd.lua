@@ -3,7 +3,7 @@
 local computer = require("computer")
 
 local motds = {
-  "Kolibra Studios 2022. All rights reserved.",
+  "mineSYS 2024. All rights reserved.",
 }
 
 print(shell._VERSION .. " on " .. kernel._VERSION .. " - " .. tostring(math.floor(computer.totalMemory()/1024)) .. "k RAM")

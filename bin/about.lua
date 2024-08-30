@@ -10,11 +10,11 @@ if #args < 1 then
 end
 
 if args[1] == "-minecore" then
-  print("mineCORE, version 3.1 (channel: dev)")
-  kernel.log("[KERNEL] >> mineCORE, version 3.1 (channel: dev)")
+  print("mineCORE, version 3.3 (channel: release)")
+  kernel.log("[KERNEL] >> mineCORE, version 3.3 (channel: dev)")
 elseif args[1] == "-mineos" then
-  print("mineOS Developer Preview, version 3.1 (channel: dev)")
-  kernel.log("[KERNEL] >> mineOS Developer Preview, version 3.1 (channel: dev)")
+  print("mineOS Developer Preview not found on this disk!")
+  kernel.log("[KERNEL] >> no about information, exiting.")
 else
   print("Usage: about -minecore|-mineos")
   return false
